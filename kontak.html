@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>kontak</title>
+	<style type="text/css">
+		* {
+			padding: 0px;
+			margin: 0px;
+			font-family: sans-serif;
+			
+		}
+		body {
+			background-image: url(garuda.jpg);
+			height: 100vh;
+			background-size: cover;
+			background-position: center;
+		}
+		.menu {
+			background-color: #000000;
+		}
+		.menu ul {
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+		}
+		.menu > ul > li {
+			float: left;
+		}
+		.menu li a {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li .dropdown {
+			display: inline-block;
+		}
+		.dropdown:hover .isi {
+			display: block;
+		}
+		.isi a:hover {
+			color: black;
+		}
+		.isi {
+			position: absolute;
+			display: none;
+			box-shadow: rgba(0,0,0,0.2);
+			background-color: lightblue;
+		}
+		center{
+			padding: 400px;
+			color: darkblue;
+			text-decoration: underline;
+		}
+		.active {
+			background-color: lightblue;
+			color: white;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li class="dropdown"><a href="#">INPUT</a>
+				<ul class="isi">
+					<li><a href="input.html">Data Penerbangan</a></li>
+				</ul>
+			</li>
+			<li class="dropdown"><a href="#">TAMPILKAN</a>
+				<ul class="isi">
+					<li><a href="tampilkan.html">Data Penerbangan</a></li>
+				</ul>
+			</li>
+			<li class="dropdown"><a href="#">PENCARIAN</a>
+				<ul class="isi">
+					<li><a href="pencarian.html">Data Penerbangan</a></li>
+				</ul>
+			</li>
+			<li><a href="kontak.html" class="active">KONTAK</a></li>
+		</ul>
+	</div>
+
+
+	<h1 align="center">PROFIL</h1><br>
+	<img src="syamanis.jpg" height="350" width="250"><br>
+	<table border="0">
+		<tr>
+			<td>NAMA</td>
+			<td>: NURSAN HALAL</td>
+		</tr>
+		<tr>
+			<td>NIM</td>
+			<td>: D0220006</td>
+		</tr>
+		<tr>
+			<td>KELAS</td>
+			<td>: P.WEB B</td>
+		</tr>
+		<tr>
+			<td>ALAMAT</td>
+			<td>: PETOOSANG</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>tampilkan</title>
+	<style type="text/css">
+		* {
+			padding: 0px;
+			margin: 0px;
+			font-family: sans-serif;
+			
+		}
+		body {
+			background-image: url(garuda.jpg);
+			height: 100vh;
+			background-size: cover;
+			background-position: center;
+		}
+		.menu {
+			background-color: #000000;
+		}
+		.menu ul {
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+		}
+		.menu > ul > li {
+			float: left;
+		}
+		.menu li a {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li .dropdown {
+			display: inline-block;
+		}
+		.dropdown:hover .isi {
+			display: block;
+		}
+		.isi a:hover {
+			color: black;
+		}
+		.isi {
+			position: absolute;
+			display: none;
+			box-shadow: rgba(0,0,0,0.2);
+			background-color: lightblue;
+		}
+		center{
+			padding: 400px;
+			color: darkblue;
+			text-decoration: underline;
+		}
+		.active {
+			background-color: lightblue;
+			color: white;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li class="dropdown"><a href="#">INPUT</a>
+				<ul class="isi">
+					<li><a href="input.html">Data Penerbangan</a></li>
+				</ul>
+			</li>
+			<li class="dropdown"><a href="#" class="active">TAMPILKAN</a>
+				<ul class="isi">
+					<li><a href="tampilkan.html">Data Penerbangan</a></li>
+				</ul>
+			</li>
+			<li class="dropdown"><a href="#">PENCARIAN</a>
+				<ul class="isi">
+					<li><a href="pencarian.html">Data Penerbangan</a></li>
+				</ul>
+			</li>
+			<li><a href="kontak.html">KONTAK</a></li>
+		</ul>
+		
+	</div>
+
+
+	<header>
+		<h1 align="center">DATA PENERBANGAN</h1><br>
+
+		<table border="1" cellpadding="0" cellspacing="0" align="center">
+			<tr  align="center">
+				<th>KODE PENERBANGAN</th>
+				<th>TYPE PESAWAT</th>
+				<th>TUJUAN PENERBANGAN</th>
+				<th>BIAYA/ORANG PENERBANGAN</th>
+			</tr>
+			<tr  align="center">
+				<td>A</td>
+				<td>300</td>
+				<td>SINGAPORE</td>
+				<td>1 Juta</td>
+				
+			</tr>
+			<tr  align="center">
+				<td>B</td>
+				<td>200</td>
+				<td>HONGKONG</td>
+				<td>3 Juta</td>
+			</tr>
+			<tr  align="center">
+				<td>C</td>
+				<td>150</td>
+				<td>MEDAN</td>
+				<td>2 Juta</td>
+			</tr>
+			<tr  align="center">
+				<td>D</td>
+				<td>175</td>
+				<td>BALI</td>
+				<td>4 Juta</td>
+			</tr>
+
+		</table>
+</body>
+</html>
